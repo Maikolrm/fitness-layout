@@ -1,0 +1,173 @@
+@media screen and (max-width:1300px)
+	/*
+		our services */
+	.our-services__service
+		width: 50%
+	.our-services__service:nth-child(3)
+		order: 4
+	/*
+		about us */
+	.about-us__descriptions
+		display: none
+	.about-us__img
+		width: 90%
+		margin: auto
+	/*
+		our classes */
+	.our-classes__class
+		width: 49.3%
+	.our-classes__class:nth-child(-n+2)
+		margin-bottom: 1.2vw
+	/*
+		contact us */
+	.contact-us__element
+		width: 49%
+	.contact-us__element:nth-child(-n+2)
+		margin-bottom: 15px
+
+@media screen and (max-width:1200px)
+	/*
+		our blogs */
+	.our-blogs__blog
+		width: 49.3%
+	.our-blogs__blog:nth-child(-n+2)
+		margin-bottom: 2vw
+
+@media screen and (max-width:1000px)
+	/*
+		our trainers */
+	.our-trainers__trainer
+		width: 49%
+	.our-trainers__trainer.selected
+		padding: 0
+	.our-trainers__trainer:nth-child(-n+2)
+		margin-bottom: 1.5vw
+	.our-trainers__trainer-bio
+		display: none
+	/*
+		our store */
+	.our-store__article
+		width: 49%
+
+@media screen and (max-width:900px)
+	/*
+		our classes */
+	.our-classes__class
+		width: 100%
+	.our-classes__class:nth-child(-n+2)
+		margin-bottom: 2vw
+	/*
+		our numbers */
+	.our-numbers__elemenet
+		width: 50%
+	.our-numbers__elemenet:nth-child(-n+2)
+		margin-bottom: 15px
+	/*
+		our blogs */
+	.our-blogs__blog
+		width: 100%
+	.flickr__img:nth-child(-n+3)
+		margin-bottom: 2vw
+
+@media screen and (min-width:800px)
+	/*
+		header */
+	.main__show-header-btn
+		display: none
+	.main__header.changed
+		box-shadow: 0 3px 6px 3px rgba(0,0,0,.3)
+	.main__header.changed .header__our-timing
+		background: $mid-grey
+	.main__header.changed .header__our-timing::before
+		border-right-color: $mid-grey
+		border-bottom-color: $mid-grey
+
+@media screen and (max-width:800px)
+	/*
+		header */
+	.main__header
+		// display: none
+		left: -100%
+		padding: 0 10px
+		flex-direction: column
+		width: 350px
+		height: 100vh
+		background: $grey
+		box-shadow: 3px 0 6px 3px rgba(0,0,0,.3)
+		border: none
+		overflow: auto
+
+	.main__header.visible
+		left: 0
+
+	/*
+		logo */
+	.header__logo
+		width: 100%
+		color: $mid-grey
+		line-height: 50px
+		border-bottom: 1px solid rgba(0,0,0,0.1)
+	/*
+		navigation */
+	.header__navigation
+		flex: 1
+		flex-direction: column
+		width: 100%
+	.navigation__link
+		width: 100%
+		text-align: center
+		color: $dark-grey
+	/*
+		close btn */
+	.header__close-btn
+		display: block
+	/*
+		our timing */
+	.header__our-timing
+		width: 100%
+		padding: 0
+		background: none
+		border-top: 1px solid rgba(0,0,0,.1)
+	.header__our-timing::before
+		display: none
+	.our-timing__heading
+		text-align: center
+		color: $mid-grey
+	/*
+		our services */
+	.our-services__service
+		width: 100%
+	.our-services__service:nth-child(3)
+		order: initial
+	/*
+		newsletter */
+	.newsletter__form
+		width: 100%
+
+@media screen and (max-width:700px)
+	.section__hover-container .section__description
+		display: none
+	/*
+		contact us */
+	.contact-us__element
+		width: 100%
+	.contact-us__element:nth-child(-n+3)
+		margin-bottom: 15px
+	.flickr__img
+		width: 32%
+	/*
+		footer */
+	.footer__social-media
+		display: none
+
+@media screen and (max-width:600px)
+	/*
+		section heading */
+	.section__heading--large
+		font-size: 16px
+	.section__heading--medium
+		font-size: 12px
+	/*
+		our store */
+	.our-store__article
+		width: 100%

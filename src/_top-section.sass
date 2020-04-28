@@ -1,0 +1,42 @@
+/*
+	social media */
+.top-section__social-media
+	position: absolute
+	top: 50%
+	right: 0
+	transform: translate(0, -50%)
+	z-index: 10
+
+.social-media__link--top-section
+	margin-bottom: 5px
+
+.social-media__link--top-section:last-child
+	margin-bottom: 0
+/*
+	slide */
+.top-section__slide
+	background: #000
+.slide__img img
+	opacity: .4
+/*
+	slide controls */
+.slide__controls
+	position: absolute
+	bottom: 30px
+	left: 50%
+	transform: translate(-50%, 0)
+	z-index: 10
+	width: 250px
+	height: 4px
+	display: flex
+
+	.controls__btn
+		flex: 1
+		height: 8px
+		border-radius: 10px
+		background: $grey
+		margin-right: 5px
+		opacity: .1
+
+.controls__btn:last-child
+	margin-right: 0

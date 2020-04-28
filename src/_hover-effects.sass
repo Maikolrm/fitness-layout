@@ -1,0 +1,44 @@
+/*
+	variables */
+$transition: all .1s linear
+$box-shadow: 0 10px 15px 3px rgba(0,0,0,.4)
+/*
+	elements transitions */
+a, button
+	transition: $transition
+/*
+	section btn */
+.section__btn--grey:hover
+	background: $orange
+	color: #fff
+/*
+	social media links */
+.social-media__link--top-section
+	opacity: .3
+.social-media__link--top-section:hover
+	opacity: 1
+.social-media__link--dark:hover
+	background: $orange
+	box-shadow: 0 6px 5px 1px rgba(0,0,0,.4)
+/*
+	header navigation */
+.navigation__link:hover
+	opacity: .9
+.navigation__link.selected
+	opacity: 1
+	color: $orange
+/*
+	our classes & blogs & articles transitions */
+.our-classes__class,
+.our-blogs__blog,
+.article__banner .banner__disscount,
+.article__banner .article__actions
+	transition: $transition
+.our-classes__class:hover, .our-blogs__blog:hover
+	box-shadow: $box-shadow
+/*
+	our store */
+.article__banner:hover .banner__disscount, .article__banner:hover .article__actions
+	opacity: 1
+.actions__btn:hover
+	background: $orange

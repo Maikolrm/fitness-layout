@@ -1,0 +1,90 @@
+/*
+	header */
+$header-height: 50px
+.main__header
+	position: fixed
+	top: 0
+	left: 0
+	z-index: 1000
+	width: 100%
+	padding-left: 10px
+	border-bottom: 1px solid $orange
+/*
+	logo */
+.header__logo
+	font-size: 16px
+	color: $grey
+/*
+	navigation */
+.navigation__link
+	padding: 0 10px
+	opacity: .2
+	font: 10px montserrat-semibold
+	color: $grey
+	line-height: $header-height
+/*
+	our timing */
+.header__our-timing
+	width: 150px
+	height: $header-height
+	background: $orange
+	padding-left: 10px
+.header__our-timing::before
+	content: ""
+	position: absolute
+	top: 0
+	left: 0
+	transform: translate(-100%, 0)
+	z-index: 1
+	width: 0
+	height: 0
+	border: ($header-height / 2) solid transparent
+	border-right-color: $orange
+	border-bottom-color: $orange
+.our-timing__heading
+	top: 50%
+	transform: translate(0, -100%)
+	font: 10px montserrat-semibold
+	color: $grey
+	text-shadow: 1px 1px 1px rgba(0,0,0,.1)
+/*
+	show hader btn */
+.main__show-header-btn
+	position: fixed
+	top: 10px
+	left: 10px
+	z-index: 10
+	width: 40px
+	height: 40px
+	background: $grey
+	border-radius: 3px
+	box-shadow: 0 0 5px 2px rgba(0,0,0,.3)
+.show-header-btn__bar
+	width: 60%
+	height: 2px
+	background: $mid-grey
+	margin: auto
+	margin-bottom: 3px
+.show-header-btn__bar:last-child
+	margin-bottom: 0
+/*
+	close btn */
+.header__close-btn
+	display: none
+	position: absolute
+	top: 5px
+	right: 10px
+	z-index: 1
+	width: 40px
+	height: 40px
+	color: $mid-grey
+	line-height: 40px
+/*
+	header changed */
+.main__header.changed
+	border: none
+	background: $grey
+.main__header.changed .header__logo
+	color: $mid-grey
+.main__header.changed .header__navigation .navigation__link
+	color: $dark-grey

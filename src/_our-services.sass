@@ -1,0 +1,36 @@
+/*
+	our services */
+.our-services__service
+	width: 25%
+	padding: 4vw 20px
+
+.our-services__service:nth-child(2n)
+	background: $orange
+.our-services__service:nth-child(odd)
+	background: $light-orange
+/*
+	service icon */
+$icon-mg: 40px
+.service__icon
+	margin: auto
+	width: $icon-mg
+	height: $icon-mg
+	font-size: 25px
+	text-align: center
+	line-height: $icon-mg
+
+/*
+	service heading */
+.service__heading
+	padding-bottom: 15px
+
+.service__heading::before
+	content: ""
+	position: absolute
+	bottom: 0
+	left: 50%
+	transform: translate(-50%, 0)
+	z-index: 1
+	width: 70px
+	height: 1px
+	background: $grey
